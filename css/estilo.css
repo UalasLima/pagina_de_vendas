@@ -24,6 +24,9 @@ section#principal {
     width: 100%;
 }
 
+section.principal-flex {
+    display: flex;
+}
 
 section h1 {
     color: white;
