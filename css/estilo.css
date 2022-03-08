@@ -107,24 +107,105 @@ section#principal span, .botao_acao span {
 
 /* Segunda seção */
 section#secao_dois {
-    background-color: #8c895e;
-    height: 100vh;
+    background-color: #377000;
+    height: 150vh;
     width: 100%;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 div#cabecalho_secao_dois {
-    background-color: #002b01;
+    background-color: #fff0b0;
     height: 25vh;
     z-index: 1;
     position: relative;
-    color: white;    
+    color: #377000;    
 }
 div#cabecalho_secao_dois_inclinacao {
     position: relative;
-    background-color: #002b01;
+    background-color: #fff0b0;
     transform: skewy(-3deg);
     height: 20vh;
     margin-top: -75px;
     margin-bottom: 45px;
     z-index: 0;
 }
+
+div.banner {
+    color: #377000;
+    background-color: #fff0b0;
+    width: 80vw;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+div#banner1 {
+    margin-top: 60px;
+    animation-name: banner1;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;    
+}
+div#banner2 {
+    animation-name: banner2;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+}
+div#banner3 {
+    animation-name: banner1;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+}
+div#banner4 {
+    animation-name: banner2;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+}
+div#banner5 {
+    animation-name: banner1;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;    
+}
+
+/* Animação dos banners */
+@keyframes banner1 {
+    from {
+        margin-left: -1095px;
+    }
+    20% {
+        margin-left: -1000px;
+    }
+    40% {
+        margin-left: -800px;
+    }
+    60% {
+        margin-left: -500px;
+    }
+    80% {
+        margin-left: -300px;
+    }
+    to {
+        margin-left: auto;
+    }
+}
+@keyframes banner2 {
+    from {
+        margin-right: -1095px;
+    }
+    20% {
+        margin-right: -1000px;
+    }
+    40% {
+        margin-right: -800px;
+    }
+    60% {
+        margin-right: -500px;
+    }
+    80% {
+        margin-right: -300px;
+    }
+    to {
+        margin-right: auto;
+    }
+}
+
+/*NECESSÁRIO POR UM GATILHO PARA A ANIMAÇÃO, O GATILHO NÃO PODE SER O CARREGAMENTO DA PÁGINA*/
